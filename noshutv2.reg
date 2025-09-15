@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+"DisableRegistryTools"=dword:00000001
+"DisableTaskMgr"=dword:00000001
+
+[HKEY_USERS\.DEFAULT\Software\Policies\Microsoft\Windows\System]
+"DisableCMD"=dword:00000002
+
+[HKEY_USERS\.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoClose"=dword:00000001
